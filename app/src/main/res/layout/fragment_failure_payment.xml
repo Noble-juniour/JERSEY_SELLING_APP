@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/greencheck"
+            android:src="@drawable/ic_warning"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Something Went Wrong With Your Payment"
+            android:layout_below="@+id/greencheck"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:id="@+id/txtsuccessmessage"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO BACK"
+            android:layout_below="@+id/txtsuccessmessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:id="@+id/btnGoback"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

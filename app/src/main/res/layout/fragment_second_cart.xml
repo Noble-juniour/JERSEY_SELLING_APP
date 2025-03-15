@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/nestedscrollView">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/addressRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addressExplain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Address: "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittxtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressExplain"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Android"
+                    android:lines="3" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ZipCodeRelLayout"
+                android:layout_below="@id/addressRelLayout"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ZipCodeExplain"
+                    android:text="Zip Code: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextZipcode"
+                    android:layout_below="@+id/ZipCodeExplain"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="zipcode"
+                    android:lines="3"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PhoneNumberRelLayout"
+                android:layout_below="@+id/ZipCodeRelLayout"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PhoneNumberExplain"
+                    android:text="Phone Number: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextPhoneNumber"
+                    android:layout_below="@+id/PhoneNumberExplain"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Phone Number"
+                    android:lines="3"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/EmailRelLayout"
+                android:layout_below="@+id/PhoneNumberRelLayout"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EmailExplain"
+                    android:text="Email: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextEmail"
+                    android:layout_below="@+id/EmailExplain"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Email"
+                    android:lines="3"/>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ButtonsRelLayout"
+                android:layout_below="@+id/EmailRelLayout"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BACK"
+                    android:id="@+id/btnBack"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT"
+                    android:id="@+id/btnNext"
+                    android:layout_toRightOf="@+id/btnBack"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

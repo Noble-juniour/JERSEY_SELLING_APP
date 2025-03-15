@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewExplain"
+            android:text="Your review about:   "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemName"
+            android:text="item name"
+            android:layout_toRightOf="@+id/reviewExplain"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTxtname"
+        android:hint="Your Name Here"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtTxtReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:hint="review"
+        android:lines="5" />
+
+    <TextView
+        android:id="@+id/txtWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Color_Accent"
+        android:text="Please Fill All The Fields"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:text="ADD"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

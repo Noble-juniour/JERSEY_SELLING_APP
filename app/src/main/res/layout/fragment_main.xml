@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnavigationView"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:id="@+id/firstRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailsNewitems"
+                android:text="New items"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newitemsRecView"
+                android:layout_below="@+id/detailsNewitems"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailsPopularitems"
+                android:text="Popular items"
+                android:layout_below="@+id/newitemsRecView"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PopularitemsRecView"
+                android:layout_below="@+id/detailsPopularitems"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailssuggesteditems"
+                android:text="suggested items"
+                android:layout_below="@+id/PopularitemsRecView"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/suggesteditemsRecView"
+                android:layout_below="@+id/detailssuggesteditems"
+                android:layout_marginTop="10dp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomnavigationView"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+        />
+
+</RelativeLayout>
